@@ -181,7 +181,6 @@ interface User {
 The application is deployed on platforms:
 - Vercel(https://user-dashboard-os8enxk7c-sabins-projects-fceb6b38.vercel.app)
 
-
 ### Build for Production
 ```bash
 npm run build
@@ -199,4 +198,4 @@ The built files will be in the `dist/` directory.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE). 
+This project is open source and available under the [MIT License](LICENSE).
