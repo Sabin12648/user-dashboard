@@ -12,7 +12,8 @@ export const useUsers = () => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const apiUrl = import.meta.env.VITE_API_URL || 'https://jsonplaceholder.typicode.com';
+        const response = await fetch(`${apiUrl}/users`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

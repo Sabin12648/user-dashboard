@@ -63,12 +63,30 @@ cd user-dashboard
 npm install
 ```
 
-3. Start the development server:
+3. Set up environment variables:
+```bash
+cp .env.example .env
+```
+
+4. Start the development server:
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:5173`
+
+### Environment Variables
+
+The application uses environment variables for configuration. Create a `.env` file in the root directory with the following variables:
+
+```env
+VITE_API_URL=https://jsonplaceholder.typicode.com
+```
+
+**Available Environment Variables:**
+- `VITE_API_URL`: Base URL for the API endpoint (defaults to JSONPlaceholder if not set)
+
+**Note:** The `.env` file is already included in `.gitignore` to keep sensitive configuration out of version control.
 
 ### Available Scripts
 
@@ -160,11 +178,9 @@ interface User {
 
 ## Deployment
 
-The application is ready for deployment on platforms like:
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting service
+The application is deployed on platforms:
+- Vercel(https://user-dashboard-os8enxk7c-sabins-projects-fceb6b38.vercel.app)
+
 
 ### Build for Production
 ```bash
