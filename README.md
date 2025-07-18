@@ -160,11 +160,9 @@ interface User {
 
 ## Deployment
 
-The application is ready for deployment on platforms like:
+The application is deployed on platforms:
 - Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting service
+
 
 ### Build for Production
 ```bash
